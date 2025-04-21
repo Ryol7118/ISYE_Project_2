@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 data = open('data.txt')
 palins = []
 distances = []
-distances.append(0)
+#distances.append(0)
 i = 0
 in_count = 0
 
@@ -27,7 +27,7 @@ i = 0
 in_count = 0
 interval = 1
 
-while palins[i] < max(palins):
+while palins[i] < (max(palins) + 3000):
     in_count += 1
     i+=1
     if palins[i] > interval*3000:
