@@ -21,4 +21,4 @@ counts_per_bin, _ = np.histogram(positions, bins=bins)
 observed_counts = np.bincount(counts_per_bin)
 print("Palindromes’ count | Observed number (Oi)")
 for k in range((bins.size - 1)):
-    print(f"{k} | {counts_per_bin[k]}")
+    print(f"      {k}         |          {counts_per_bin[k]}")
